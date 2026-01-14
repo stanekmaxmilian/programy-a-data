@@ -23,255 +23,84 @@
 </header>
 
 <main class="container">
-
     <section class="box">
-        <h2>Soubor a adresář</h2>
-        <p>
-            Soubor je množina souvisejících dat uložených na diskové jednotce. Název souboru je obvykle tvořen jménem (ve Windows až 254 znaků) a příponou, která určuje typ souboru. K dalším vlastnostem souboru patří jeho velikost, autor (vlastník), datum vytvoření, datum změny, atributy, přístupová práva apod.
-        </p>
-        <p>
-            K přehlednější práci se soubory slouží systém adresářů či složek (directories, folders). Adresáře tvoří na disku typicky hierarchickou strukturu (tree - strom); základem je tzv. kořenový adresář (root) označený symbolem „/" (Unix, Linux), nebo „\" (Windows). Každý adresář může obsahovat soubory i podadresáře (subdirectories).
-        </p>
+        <h2>📚 Rychlý přehled témat</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <h3>💾 Soubory a adresáře</h3>
+                <p>Struktura disku, cesty a druhy souborů.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="soubory.html#soubory-adresare">Základy</a>
+                    <a class="pill-link" href="soubory.html#cesta-k-souboru">Cesta</a>
+                    <a class="pill-link" href="soubory.html#programove-soubory">Program</a>
+                    <a class="pill-link" href="soubory.html#datove-soubory">Data</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>⚙️ Operační systémy</h3>
+                <p>Role jádra, historie a rozdělení OS.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="operacni-systemy.html#operacni-systemy-uvod">Co je OS</a>
+                    <a class="pill-link" href="operacni-systemy.html#historie-os">Historie</a>
+                    <a class="pill-link" href="operacni-systemy.html#typy-os">Typy</a>
+                    <a class="pill-link" href="operacni-systemy.html#ovladace-zarizeni">Ovladače</a>
+                    <a class="pill-link" href="operacni-systemy.html#firmware">Firmware</a>
+                    <a class="pill-link" href="operacni-systemy.html#utility">Utility</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>🖥️ Aplikace</h3>
+                <p>Hlavní skupiny uživatelských programů.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="aplikace.html#kancelarske-baliky">Kancelář</a>
+                    <a class="pill-link" href="aplikace.html#graficke-aplikace">Grafika</a>
+                    <a class="pill-link" href="aplikace.html#multimedialni-programy">Multimédia</a>
+                    <a class="pill-link" href="aplikace.html#komunikacni-programy">Síť</a>
+                    <a class="pill-link" href="aplikace.html#informacni-systemy">IS</a>
+                    <a class="pill-link" href="aplikace.html#malware-antiviry">Antiviry</a>
+                    <a class="pill-link" href="aplikace.html#ide">IDE</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>📦 Instalace a licence</h3>
+                <p>Jak instalovat a jaké licence existují.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="instalace.html#instalace-programu">Instalace</a>
+                    <a class="pill-link" href="instalace.html#odinstalace-programu">Odinstalace</a>
+                    <a class="pill-link" href="instalace.html#verze-programu">Verze</a>
+                    <a class="pill-link" href="instalace.html#typy-licenci">Licence</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>☁️ Virtualizace a cloud</h3>
+                <p>Emulace, VM a modely cloudových služeb.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="virtualizace.html#emulator">Emulátor</a>
+                    <a class="pill-link" href="virtualizace.html#virtualizace-uvod">Virtualizace</a>
+                    <a class="pill-link" href="virtualizace.html#virtualni-stroj">VM</a>
+                    <a class="pill-link" href="virtualizace.html#cloud-computing">Cloud</a>
+                    <a class="pill-link" href="virtualizace.html#modely-cloudu">IaaS/PaaS/SaaS</a>
+                    <a class="pill-link" href="virtualizace.html#vyhody-nevyhody">Výhody</a>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>💾 Zálohování</h3>
+                <p>Co zálohovat, jaké typy a zásady.</p>
+                <div class="topic-links">
+                    <a class="pill-link" href="zalohovani.html#co-je-zaloha">Co je</a>
+                    <a class="pill-link" href="zalohovani.html#prostredky-zalohovani">Prostředky</a>
+                    <a class="pill-link" href="zalohovani.html#typy-zaloh">Typy</a>
+                    <a class="pill-link" href="zalohovani.html#zasady-zalohovani">Zásady</a>
+                    <a class="pill-link" href="zalohovani.html#moznosti-zalohovani">Možnosti</a>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section class="box">
-        <h2>Cesta k souboru</h2>
-        <p>
-            Cesta vyjadřuje umístění souboru vždy směrem od nejvyššího adresáře:
-        </p>
-        <code>C:\XAMPP\mysql\bin\mysql.exe</code>
-        <p>
-            Pro operace se soubory využíváme někdy zástupné znaky (wildcards):
-        </p>
-        <ul>
-            <li>Symbol <code>*</code> nahrazuje v názvu libovolný počet znaků (např. *.*)</li>
-            <li>Symbol <code>?</code> nahrazuje jeden libovolný znak (např. s?s.txt)</li>
-        </ul>
-    </section>
-
-    <section class="box">
-        <h2>Programové a datové soubory</h2>
-        <h3>Programové soubory</h3>
-        <p>
-            Programové soubory obsahují instrukce, podle nichž procesor ve spolupráci s dalšími hardwarovými komponentami plní konkrétní úlohy. Mohou být uloženy v již zkompilované binární podobě (nejčastěji ve strojovém kódu pro danou platformu), nebo ve zdrojovém kódu, obsahujícím příkazy určitého programovacího jazyka.
-        </p>
-        <p>
-            Mezi programové soubory můžeme zařadit také <strong>skripty</strong>, soubory instrukcí v textové podobě, které ke svému spuštění vyžadují speciální program - interpret.
-        </p>
-        <p>
-            Větší programy jsou tvořeny programovými <strong>knihovnami</strong> (runtime libraries), speciálními soubory s připravenými funkcemi, které programy využívají pro svůj běh. Ve Windows to jsou např. soubory DRV a SYS (obsahující zejména ovladače čili drivery, ale i systémové funkce), nebo také DLL (dynamic linking library - dynamicky linkované knihovny).
-        </p>
-        <p>
-            Některé soubory s tzv. spustitelnou příponou (např. .exe a .com ve Windows, .sh v Linuxu) slouží ke spuštění programu - aktivaci procesu v rámci operačního systému. Za <strong>rezidentní programy</strong> (služby, démony) označujeme ty procesy, které jsou spuštěny automaticky po iniciaci operačního systému.
-        </p>
-
-        <h3>Datové soubory</h3>
-        <p>
-            Datové soubory obsahují data různého charakteru (číselné, textové, grafické, zvukové údaje). K jejich zpracování se používají konkrétní programy, a proto jsou často přípony těchto datových souborů asociovány (propojeny) s určitou aplikací (např. DOCX s programem MS Word, nebo XLSX s programem MS Excel).
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Operační systémy</h2>
-        <p>
-            Základním programovým vybavením počítačů (a jim podobných zařízení) jsou operační systémy (OS - Operation System). Jejich nejdůležitější funkcí je zajištění řízení hardware. To má na starosti jádro systému, které tvoří subsystémy pro správu procesoru, paměti, diskových médií a dalších zařízení.
-        </p>
-        <p>
-            Nezbytnou součástí operačních systémů je <strong>aplikační rozhraní</strong> (API - Application Programming Interface), které nabízí programátorům prostředky pro vývoj aplikací pro daný systém. Uživatelské rozhraní slouží k ovládání OS a k spouštění aplikací. Zatímco starší OS se ovládaly častěji prostřednictvím příkazového řádku (CLI - Command Line Interface), moderní systémy poskytují grafické uživatelské rozhraní (GUI - Graphic User Interface).
-        </p>
-
-        <h3>Historie a typy OS</h3>
-        <p>
-            Na počátku vývoje moderních OS byl víceúlohový a víceuživatelský systém UNIX, který se od 70. let používal v sálových počítačích i minipočítačích. V 80. letech si konkurovaly systémy firmy Microsoft (MS DOS) a firmy Apple (Mac OS), která začala jako první používat grafické uživatelské rozhraní. To se stalo také základem MS Windows.
-        </p>
-        <p>
-            V současnosti získával stále větší popularitu volně šiřitelný systém Linux, pojmenovaný podle svého tvůrce Linusa Torvaldse. Zatímco operační systémy Windows dominují především na osobních počítačích, různé linuxové distribuce jsou velmi často instalovány na síťových serverech.
-        </p>
-        <p>
-            Současné OS rozdělujeme nejčastěji podle typů zařízení: systémy pro síťové servery (MS Windows Server, Linux, Unix), pro osobní počítače (MS Windows, Linux Ubuntu, OS X), pro mobilní zařízení (Android, iOS, Windows Phone) i speciální RTOS (Real-Time Operating System - systémy reálného času).
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Ovladače, firmware a utility</h2>
-        
-        <h3>Ovladače zařízení (device drivers)</h3>
-        <p>
-            Speciální programy, které zajišťují komunikaci OS s určitým technickým vybavením. Bez potřebného ovladače nemůže zařízení správně fungovat. Standardní ovladače pro běžná zařízení bývají součástí moderních OS. Instalaci zařízení ve Windows usnadňuje standard <strong>Plug and Play</strong> (PnP).
-        </p>
-
-        <h3>Firmware</h3>
-        <p>
-            Programové vybavení, které slouží pro řízení nějakého vestavěného systému (embedded system). Firmware řídí například kalkulačky, počítačové komponenty (pevný disk, router...), mobilní telefon, digitální fotoaparát atd. Základním firmwarem v počítači je BIOS (Basic Output-Input System), který zajišťuje především start počítače.
-        </p>
-
-        <h3>Utility</h3>
-        <p>
-            Menší pomocné programy, které umožňují vykonávat servisní operace potřebné k fungování počítače. Patří k nim komprimační programy, diagnostické a testovací programy, utility pro kontrolu a optimalizaci operačního systému, různé konverzní programy. Řada utilit je integrální součástí OS. Příkladem může být Správce úloh ve Windows (Task Manager).
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Aplikační software</h2>
-        <p>
-            Aplikace jsou uživatelské programy určené pro jeden nebo více specifických účelů. Pro spouštění aplikací je nezbytná přítomnost základního software - operačního systému.
-        </p>
-
-        <h3>Základní skupiny aplikací</h3>
-        <ul>
-            <li><strong>Kancelářské balíky</strong> - textový procesor, tabulkový procesor, nástroj na tvorbu prezentací, databázový systém (Microsoft Office, OpenOffice, WPS Office)</li>
-            <li><strong>Grafické aplikace</strong> - vytvoření grafických dokumentů, skenování, editace fotografií (Adobe Photoshop, GIMP, Inkscape), programy CAD a DTP</li>
-            <li><strong>Multimediální programy</strong> - vytváření, zpracování a prezentace multimediálních dat, editace zvuku nebo videa, počítačové hry</li>
-            <li><strong>Programy pro komunikaci v síti</strong> - webové prohlížeče, klienty elektronické pošty, instant messaging (IM)</li>
-            <li><strong>Informační a databázové systémy</strong> - komplexní programové vybavení institucí (ERP systémy, Oracle, SAP)</li>
-            <li><strong>Malware a antivirové programy</strong> - ochrana před škodlivým softwarem (AVG, AVAST, ESET, Kaspersky)</li>
-            <li><strong>Integrovaná vývojová prostředí</strong> - IDE pro programátory s editory, ladicími prostředky a překladači</li>
-        </ul>
-    </section>
-
-    <section class="box">
-        <h2>Instalace programů</h2>
-        
-        <h3>Instalace</h3>
-        <p>
-            Po vložení instalačního CD/DVD disku se většinou okamžitě spustí instalační program. Průvodce instalací (wizard) si vyžádá sériové číslo a souhlas s licenčními podmínkami, zeptá se na umístění instalace a provede nutnou konfiguraci.
-        </p>
-
-        <h3>Odinstalace</h3>
-        <p>
-            Úplné odebrání programu bývá paradoxně často složitější, zvláště v systémech Windows. Program si při instalaci nahraje své komponenty do mnoha složek, vytvoří záznamy v registru a při svém běhu vytváří pomocné soubory. Pro jejich odstranění lze používat speciální utility.
-        </p>
-
-        <h3>Lokalizace</h3>
-        <p>
-            Lokalizace je překlad programu do češtiny. Musí se přeložit nejen volby nabídek a obsah dialogových oken, ale také nápověda k programu a návod k programu (manuál).
-        </p>
-
-        <h3>Platforma a kompatibilita</h3>
-        <p>
-            V souvislosti s určitým typem OS i typem procesoru používáme pojem <strong>platforma</strong>. Používaný program musí být určen pro operační systém, který je na počítači nainstalován. Mnoho programů má proto verze určené pro několik operačních systémů – jsou multiplatformní.
-        </p>
-
-        <h3>Verze programů</h3>
-        <p>
-            Verze programu se označuje číslem za názvem programu (např. 1.0). Aktualizace programu (<strong>update</strong>) řeší dílčí nedostatky nebo bezpečnostní problémy. Povýšení na novou verzi (<strong>upgrade</strong>) přináší významnější změny. Opačný postup se nazývá <strong>downgrade</strong>.
-        </p>
-
-        <h3>Registrace programu</h3>
-        <p>
-            Registrace je zaevidování uživatele do databáze výrobce programu. Přináší výhody jako nárok na upgrade za sníženou cenu, informace o nových verzích a využití zákaznické linky.
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Softwarové licence</h2>
-        <p>
-            Uživatel nemůže koupit program jako celek se všemi právy k němu, ale může získat pouze <strong>licenci</strong> (oprávnění) k jeho užívání. Licence je většinou nepřenosná.
-        </p>
-
-        <h3>Typy licencí</h3>
-        <ul>
-            <li><strong>Komerční software</strong> (proprietární) - šířen za úplatu, omezen počet instalací a právo modifikace</li>
-            <li><strong>OEM</strong> (Original Equipment Manufacturer) - produkty určené k zabudování jako komponenty, často nabízeny s hardware za sníženou cenu</li>
-            <li><strong>Demoverze a zkušební verze</strong> - programy se zablokovanými funkcemi nebo časově omezené</li>
-            <li><strong>Shareware</strong> - po určité době je uživatel povinnen zaslat autorovi poplatek</li>
-            <li><strong>Freeware</strong> - možné používat a rozšiřovat zdarma, dodržování autorských práv</li>
-            <li><strong>Public Domain</strong> - programy k volnému užití, lze používat, volně šířit i upravovat</li>
-        </ul>
-
-        <h3>Svobodný software a GNU/Linux</h3>
-        <p>
-            Svobodný software (free software) je šířen většinou pod licencí Open Source (GPL). <strong>Open Source</strong> znamená otevřený zdroj - programy musí být šířeny i s uvedením zdrojových textů. Licence <strong>GNU/GPL</strong> (GNU General Public Licence) stanovuje přesné podmínky.
-        </p>
-        <p>
-            Projekt GNU (GNU is Not Unix) založil Richard M. Stallman v 80. letech. Kombinací systému GNU a jádra Linux (vytvořené Linusem Torvaldsem) vznikl GNU/Linux systém.
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Emulace a virtualizace</h2>
-        
-        <h3>Emulátor</h3>
-        <p>
-            Emulátor je program, který umožňuje běh počítačových programů na jiné platformě (architektuře, operačním systému), než pro kterou byly původně vytvořeny. Typickým příkladem je emulátor DOSBox, který emuluje starý operační systém MS DOS v prostředí novějších Windows.
-        </p>
-
-        <h3>Virtualizace</h3>
-        <p>
-            Virtualizace označuje postupy a techniky, které umožňují v počítači přistupovat k dostupným zdrojům jiným způsobem, než jakým fyzicky existují. Virtualizaci je možné realizovat na různých úrovních - od celého počítače (virtuální stroj), po jednotlivé hardwarové komponenty.
-        </p>
-        <p>
-            <strong>Virtuální stroj</strong> je speciální software, který dokáže simulovat skutečný počítač a umožňuje instalaci OS i dalších programů. Příklady: Virtual PC (Microsoft), VirtualBox (Oracle), VMWare. Virtuální stroje se používají z bezpečnostních důvodů, pro testování nových aplikací a konsolidaci serverů.
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Software a autorský zákon</h2>
-        <p>
-            Program je chráněn autorským zákonem, který i počítačový program považuje za autorské dílo. Jeho tvůrci k němu mají autorská práva, podobně jako autoři knih, hudební skladatelé atd.
-        </p>
-        <p>
-            Kontrolu legálnosti software provádí specializované oddělení Policie ČR. Je-li zjištěno užívání nelegálního softwaru, dojde k finančním i trestním postihům odpovědných lidí i firmy.
-        </p>
-
-        <h3>Ochrana programů před nelegálním kopírováním</h3>
-        <ul>
-            <li>Zadání licenčního (sériového) čísla</li>
-            <li>Aktivace přes Internet nebo telefon</li>
-            <li>Hardwarový klíč (malé technické zařízení připojované k USB portu)</li>
-            <li>Speciálně upravená chybná místa na CD/DVD</li>
-        </ul>
-    </section>
-
-    <section class="box">
-        <h2>Cloudová řešení</h2>
-        <p>
-            <strong>Cloud computing</strong> je výpočetní model založený na poskytování služeb a programů uložených na internetových serverech, k nimž mohou uživatelé přistupovat pomocí klientských aplikací (webového prohlížeče) a používat je prakticky odkudkoliv.
-        </p>
-
-        <h3>Typy cloudů</h3>
-        <ul>
-            <li><strong>Veřejný cloud</strong> - určen pro velký nebo neomezený počet klientů (Skype, Seznam)</li>
-            <li><strong>Privátní cloud</strong> - k dispozici pro omezený počet zákazníků</li>
-            <li><strong>Hybridní cloud</strong> - kombinuje veřejný i privátní přístup</li>
-        </ul>
-
-        <h3>Distribuční modely</h3>
-        <ul>
-            <li><strong>IaaS</strong> (Infrastructure as a Service) - poskytovatel nabízí celou infrastrukturu, typicky virtuální stroje (Amazon EC2, Microsoft Azure)</li>
-            <li><strong>PaaS</strong> (Platform as a Service) - kompletní prostředky pro podporu celého životního cyklu tvorby webových aplikací (Google App Engine, Heroku)</li>
-            <li><strong>SaaS</strong> (Software as a Service) - aplikace licencovaná jako služba přístupná odkudkoliv (Google Apps, Microsoft Office365)</li>
-        </ul>
-
-        <h3>Výhody a nevýhody</h3>
-        <p><strong>Výhody:</strong> Není nutné udržovat SW a HW, efektivní řízení, dostupnost dat, jednoduché rozhraní, škálovatelnost</p>
-        <p><strong>Nevýhody:</strong> Závislost na poskytovateli, nutnost připojení k Internetu, možné zneužití dat</p>
-    </section>
-
-<main class="container">
-
-    <section class="box">
-        <h2>Úvod do programů a dat</h2>
-        <p>
-            Programové vybavení (software) je podmínkou využití technického vybavení (hardware). V raných dobách počítačové éry byly programy vytvářeny vždy pro konkrétní hardware. V okamžiku, kdy počítače začaly být produkovány ve větších sériích, objevila se i potřeba vývoje speciálních systémových programů.
-        </p>
-        <p>
-            Tato webová stránka vás provede světem programů a dat - od základních souborů přes operační systémy až po zálohování dat.
-        </p>
-    </section>
-
-    <section class="box">
-        <h2>Obsah</h2>
-        <ul>
-            <li><strong>Soubory a adresáře</strong> - základní pojmy, typy souborů, cesty</li>
-            <li><strong>Operační systémy</strong> - Windows, Linux, jejich vývoj a funkce</li>
-            <li><strong>Aplikace</strong> - kancelářské balíky, grafické programy, multimédia</li>
-            <li><strong>Instalace a licence</strong> - jak instalovat programy, typy licencí</li>
-            <li><strong>Virtualizace a cloud</strong> - virtuální stroje, cloudové služby</li>
-            <li><strong>Zálohování</strong> - typy záloh, zásady zálohování</li>
-        </ul>
-    </section>
-
 </main>
 
 <footer>
