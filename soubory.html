@@ -25,20 +25,56 @@
 <main class="container">
 
     <section class="box" id="soubory-adresare">
-        <h2>Soubor a adresář</h2>
-        <p>
-            Soubor je množina souvisejících dat uložených na diskové jednotce. Název souboru je obvykle tvořen jménem (ve Windows až 254 znaků) a příponou, která určuje typ souboru. K dalším vlastnostem souboru patří jeho velikost, autor (vlastník), datum vytvoření, datum změny, atributy, přístupová práva apod.
-        </p>
-        <p>
-            K přehlednější práci se soubory slouží systém adresářů či složek (directories, folders). Adresáře tvoří na disku typicky hierarchickou strukturu (tree - strom); základem je tzv. kořenový adresář (root) označený symbolem „/" (Unix, Linux), nebo „\" (Windows). Každý adresář může obsahovat soubory i podadresáře (subdirectories).
-        </p>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <div style="flex: 1;">
+                <h2>Soubor a adresář</h2>
+                <p>
+                    Soubor je množina souvisejících dat uložených na diskové jednotce. Název souboru je obvykle tvořen jménem (ve Windows až 254 znaků) a příponou, která určuje typ souboru. K dalším vlastnostem souboru patří jeho velikost, autor (vlastník), datum vytvoření, datum změny, atributy, přístupová práva apod.
+                </p>
+                <p>
+                    K přehlednější práci se soubory slouží systém adresářů či složek (directories, folders). Adresáře tvoří na disku typicky hierarchickou strukturu (tree - strom); základem je tzv. kořenový adresář (root) označený symbolem „/" (Unix, Linux), nebo „\" (Windows). Každý adresář může obsahovat soubory i podadresáře (subdirectories).
+                </p>
+            </div>
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#f0f7ff" rx="10"/>
+                <rect x="30" y="40" width="60" height="50" fill="#0575e6" rx="5"/>
+                <text x="60" y="73" font-size="24" fill="white" text-anchor="middle">📁</text>
+                <rect x="100" y="50" width="50" height="35" fill="#06d6a0" rx="3"/>
+                <text x="125" y="72" font-size="20" fill="white" text-anchor="middle">📄</text>
+                <circle cx="50" cy="130" r="8" fill="#1b4965"/>
+                <circle cx="90" cy="130" r="8" fill="#1b4965"/>
+                <circle cx="130" cy="130" r="8" fill="#1b4965"/>
+                <line x1="58" y1="130" x2="82" y2="130" stroke="#1b4965" stroke-width="2"/>
+                <line x1="98" y1="130" x2="122" y2="130" stroke="#1b4965" stroke-width="2"/>
+            </svg>
+        </div>
     </section>
 
     <section class="box" id="cesta-k-souboru">
-        <h2>Cesta k souboru</h2>
-        <p>
-            Cesta vyjadřuje umístění souboru vždy směrem od nejvyššího adresáře:
-        </p>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="160" height="160" viewBox="0 0 160 160" style="flex-shrink: 0;">
+                <rect width="160" height="160" fill="#f0f7ff" rx="10"/>
+                <rect x="10" y="45" width="140" height="25" fill="white" stroke="#0575e6" stroke-width="2" rx="3"/>
+                <text x="80" y="62" font-size="11" text-anchor="middle" fill="#1b4965" font-family="monospace">C:\Users\Data\file.txt</text>
+                <g>
+                    <rect x="10" y="90" width="32" height="20" fill="#0575e6" rx="2"/>
+                    <text x="26" y="103" font-size="10" text-anchor="middle" fill="white">C:\</text>
+                </g>
+                <g>
+                    <rect x="48" y="90" width="32" height="20" fill="#06d6a0" rx="2"/>
+                    <text x="64" y="103" font-size="9" text-anchor="middle" fill="white">Users</text>
+                </g>
+                <g>
+                    <rect x="86" y="90" width="32" height="20" fill="#52b788" rx="2"/>
+                    <text x="102" y="103" font-size="9" text-anchor="middle" fill="white">Data</text>
+                </g>
+                <path d="M 26 110 L 64 88 M 64 110 L 102 88" stroke="#1b4965" stroke-width="1"/>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Cesta k souboru</h2>
+                <p>
+                    Cesta vyjadřuje umístění souboru vždy směrem od nejvyššího adresáře:
+                </p>
         <code>C:\XAMPP\mysql\bin\mysql.exe</code>
         <p>
             Pro operace se soubory využíváme někdy zástupné znaky (wildcards):
@@ -47,9 +83,31 @@
             <li>Symbol <code>*</code> nahrazuje v názvu libovolný počet znaků (např. *.*)</li>
             <li>Symbol <code>?</code> nahrazuje jeden libovolný znak (např. s?s.txt)</li>
         </ul>
-    </section>
+            </div>
+        </div>
 
     <section class="box" id="programove-datove-soubory">
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="160" height="160" viewBox="0 0 160 160" style="flex-shrink: 0;">
+                <rect width="160" height="160" fill="#f0f7ff" rx="10"/>
+                <g>
+                    <rect x="15" y="25" width="60" height="65" fill="#0575e6" rx="5" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="45" y="48" font-size="11" text-anchor="middle" fill="white" font-weight="bold">Programový</text>
+                    <text x="45" y="62" font-size="11" text-anchor="middle" fill="white" font-weight="bold">soubor</text>
+                    <rect x="20" y="92" width="50" height="25" fill="white" stroke="#0575e6" stroke-width="1" rx="2"/>
+                    <text x="45" y="110" font-size="8" text-anchor="middle" fill="#0575e6">.exe .dll .sh</text>
+                </g>
+                <g>
+                    <rect x="85" y="25" width="60" height="65" fill="#06d6a0" rx="5" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="115" y="48" font-size="11" text-anchor="middle" fill="white" font-weight="bold">Datový</text>
+                    <text x="115" y="62" font-size="11" text-anchor="middle" fill="white" font-weight="bold">soubor</text>
+                    <rect x="90" y="92" width="50" height="25" fill="white" stroke="#06d6a0" stroke-width="1" rx="2"/>
+                    <text x="115" y="110" font-size="8" text-anchor="middle" fill="#06d6a0">.txt .doc .jpg</text>
+                </g>
+                <line x1="80" y1="60" x2="85" y2="60" stroke="#1b4965" stroke-width="2"/>
+                <line x1="80" y1="70" x2="85" y2="70" stroke="#1b4965" stroke-width="2"/>
+            </svg>
+            <div style="flex: 1;">
         <h2>Programové a datové soubory</h2>
         <h3 id="programove-soubory">Programové soubory</h3>
         <p>
@@ -69,6 +127,8 @@
         <p>
             Datové soubory obsahují data různého charakteru (číselné, textové, grafické, zvukové údaje). K jejich zpracování se používají konkrétní programy, a proto jsou často přípony těchto datových souborů asociovány (propojeny) s určitou aplikací (např. DOCX s programem MS Word, nebo XLSX s programem MS Excel).
         </p>
+            </div>
+        </div>
     </section>
 
 </main>

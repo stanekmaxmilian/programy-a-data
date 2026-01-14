@@ -25,13 +25,28 @@
 <main class="container">
 
     <section class="box" id="co-je-zaloha">
-        <h2>Co je záloha?</h2>
-        <p>
-            Záloha nebo záložní kopie (anglicky <strong>backup</strong>) je kopie dat uložená na jiném datovém nosiči (nebo i místě). Záložní data jsou využívána v případě ztráty, poškození nebo jiné potřeby práce s daty uloženými v minulosti.
-        </p>
-        <p>
-            Zálohování probíhá nepravidelně (např. v domácnostech), nebo pravidelně podle rozvrhu (např. ve firmách). Používají se různé strategie zálohování; volba správné strategie závisí na tom, zda je potřeba se zálohami pracovat velmi často, nebo je naopak požadována maximální délka archivace zálohovaných dat.
-        </p>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <div style="flex: 1;">
+                <h2>Co je záloha?</h2>
+                <p>
+                    Záloha nebo záložní kopie (anglicky <strong>backup</strong>) je kopie dat uložená na jiném datovém nosiči (nebo i místě). Záložní data jsou využívána v případě ztráty, poškození nebo jiné potřeby práce s daty uloženými v minulosti.
+                </p>
+                <p>
+                    Zálohování probíhá nepravidelně (např. v domácnostech), nebo pravidelně podle rozvrhu (např. ve firmách). Používají se různé strategie zálohování; volba správné strategie závisí na tom, zda je potřeba se zálohami pracovat velmi často, nebo je naopak požadována maximální délka archivace zálohovaných dat.
+                </p>
+            </div>
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#f0f7ff" rx="10"/>
+                <rect x="35" y="30" width="60" height="70" fill="white" stroke="#1b4965" stroke-width="2" rx="5"/>
+                <text x="65" y="75" font-size="40" text-anchor="middle" fill="#0575e6">💾</text>
+                <path d="M 75 80 L 110 80 L 115 90 L 75 90 Z" fill="#06d6a0" stroke="#1b4965" stroke-width="1.5"/>
+                <circle cx="85" cy="100" r="8" fill="#52b788"/>
+                <circle cx="105" cy="100" r="8" fill="#52b788"/>
+                <path d="M 85 110 L 85 130 M 105 110 L 105 130" stroke="#1b4965" stroke-width="2"/>
+                <rect x="75" y="130" width="30" height="20" fill="#48cae4" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                <text x="90" y="143" font-size="12" text-anchor="middle" fill="white" font-weight="bold">Backup</text>
+            </svg>
+        </div>
     </section>
 
     <section class="box" id="prostredky-zalohovani">
@@ -44,9 +59,39 @@
     </section>
 
     <section class="box" id="typy-zaloh">
-        <h2>Typy záloh</h2>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#f0f7ff" rx="10"/>
+                <g>
+                    <rect x="20" y="25" width="140" height="35" fill="#0575e6" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="90" y="47" font-size="11" text-anchor="middle" fill="white" font-weight="bold">Úplná záloha</text>
+                </g>
+                <path d="M 90 60 L 60 80" stroke="#1b4965" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M 90 60 L 120 80" stroke="#1b4965" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <g>
+                    <rect x="30" y="80" width="50" height="35" fill="#06d6a0" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="55" y="102" font-size="9" text-anchor="middle" fill="white" font-weight="bold">Inkrementální</text>
+                </g>
+                <g>
+                    <rect x="100" y="80" width="50" height="35" fill="#52b788" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="125" y="102" font-size="9" text-anchor="middle" fill="white" font-weight="bold">Rozdílová</text>
+                </g>
+                <path d="M 55 115 L 55 125 L 85 125" stroke="#1b4965" stroke-width="1.5"/>
+                <path d="M 85 115 L 85 125 L 115 125" stroke="#1b4965" stroke-width="1.5"/>
+                <g>
+                    <rect x="35" y="125" width="110" height="35" fill="#00b4d8" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="90" y="147" font-size="9" text-anchor="middle" fill="white" font-weight="bold">Obnovení dat</text>
+                </g>
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#1b4965"/>
+                    </marker>
+                </defs>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Typy záloh</h2>
 
-        <h3>Nestrukturovaná</h3>
+                <h3>Nestrukturovaná</h3>
         <p>
             Úložištěm může být větší množství disket, CD, DVD medií s minimem informací o záloze; nejjednodušší, ale nevhodná pro větší firmy.
         </p>
@@ -79,6 +124,8 @@
         <p>
             Naproti tomu prosté zrcadlení dat na druhý disk (např. RAID 1) stav v minulosti nezachycuje.
         </p>
+            </div>
+        </div>
     </section>
 
     <section class="box" id="zasady-zalohovani">
@@ -95,9 +142,37 @@
     </section>
 
     <section class="box" id="moznosti-zalohovani">
-        <h2>Možnosti zálohování</h2>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#f0f7ff" rx="10"/>
+                <g>
+                    <rect x="10" y="15" width="40" height="40" fill="#0575e6" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="30" y="40" font-size="20" text-anchor="middle" fill="white">📄</text>
+                    <text x="30" y="62" font-size="8" text-anchor="middle" fill="#1b4965" font-weight="bold">Soubory</text>
+                </g>
+                <g>
+                    <rect x="60" y="15" width="40" height="40" fill="#06d6a0" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="80" y="40" font-size="20" text-anchor="middle" fill="white">💾</text>
+                    <text x="80" y="62" font-size="8" text-anchor="middle" fill="#1b4965" font-weight="bold">Oddíl</text>
+                </g>
+                <g>
+                    <rect x="110" y="15" width="40" height="40" fill="#52b788" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="130" y="40" font-size="20" text-anchor="middle" fill="white">💿</text>
+                    <text x="130" y="62" font-size="8" text-anchor="middle" fill="#1b4965" font-weight="bold">Disk</text>
+                </g>
+                <g>
+                    <rect x="35" y="75" width="110" height="40" fill="#00b4d8" rx="3" stroke="#1b4965" stroke-width="1.5"/>
+                    <text x="90" y="95" font-size="11" text-anchor="middle" fill="white" font-weight="bold">Systém</text>
+                    <text x="90" y="109" font-size="8" text-anchor="middle" fill="white">OS + Aplikace + Data</text>
+                </g>
+                <rect x="20" y="130" width="140" height="40" fill="white" stroke="#1b4965" stroke-width="2" rx="4"/>
+                <text x="90" y="147" font-size="9" text-anchor="middle" fill="#1b4965" font-weight="bold">Obnovení zálohy</text>
+                <text x="90" y="162" font-size="8" text-anchor="middle" fill="#556677">Výběr vhodné metody</text>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Možnosti zálohování</h2>
 
-        <h3>Záloha adresářů a souborů</h3>
+                <h3>Záloha adresářů a souborů</h3>
         <p>
             Provádíme ji různými způsoby - prostým kopírováním, plánovanou synchronizací, zálohováním adresáře s komprimací obsahu. Pro běžnou zálohu můžeme použít řadu archivačních programů.
         </p>
@@ -119,6 +194,8 @@
             Záloha funkčního stavu systému, která by umožňuje obnovení systému do původní podoby. Je možné použít buď program nabízený samotným OS, nebo některý ze specializovaných programů.
         </p>
         <p><strong>Příklad programu:</strong> Acronis</p>
+            </div>
+        </div>
     </section>
 
 </main>

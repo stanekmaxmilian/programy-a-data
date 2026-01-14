@@ -42,10 +42,31 @@
     </section>
 
     <section class="box" id="virtualni-stroj">
-        <h2>Virtuální stroj</h2>
-        <p>
-            Virtuální stroj je speciální software, který dokáže simulovat skutečný počítač (včetně jeho procesoru, paměti, disku, přídavných karet) a umožňuje instalaci OS i dalších programů. Podmínkou virtualizace je výkonný počítač a potřebný software.
-        </p>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#f0f7ff" rx="10"/>
+                <rect x="20" y="20" width="140" height="120" fill="white" stroke="#1b4965" stroke-width="2" rx="8"/>
+                <text x="90" y="40" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b4965">Host OS</text>
+                <rect x="30" y="50" width="120" height="80" fill="#e8f3ff" stroke="#0575e6" stroke-width="2" rx="6"/>
+                <text x="90" y="68" font-size="11" font-weight="bold" text-anchor="middle" fill="#0575e6">Hypervisor / VM</text>
+                <g>
+                    <rect x="35" y="75" width="35" height="35" fill="#06d6a0" rx="3"/>
+                    <text x="52" y="97" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Linux</text>
+                </g>
+                <g>
+                    <rect x="75" y="75" width="35" height="35" fill="#52b788" rx="3"/>
+                    <text x="92" y="97" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Win</text>
+                </g>
+                <g>
+                    <rect x="115" y="75" width="35" height="35" fill="#48cae4" rx="3"/>
+                    <text x="132" y="97" font-size="10" text-anchor="middle" fill="white" font-weight="bold">BSD</text>
+                </g>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Virtuální stroj</h2>
+                <p>
+                    Virtuální stroj je speciální software, který dokáže simulovat skutečný počítač (včetně jeho procesoru, paměti, disku, přídavných karet) a umožňuje instalaci OS i dalších programů. Podmínkou virtualizace je výkonný počítač a potřebný software.
+                </p>
         
         <h3>Příklady softwarů pro virtualizaci</h3>
         <ul>
@@ -60,13 +81,30 @@
             <li><strong>Testování</strong> - testování nových aplikací</li>
             <li><strong>Konsolidace serverů</strong> - dokonalejší využití hardware, oddělený běh síťových aplikací i vyšší bezpečnost dat</li>
         </ul>
-    </section>
-
+            </div>
+        </div>
     <section class="box" id="cloud-computing">
-        <h2>Cloud computing</h2>
-        <p>
-            Cloud computing je nový výpočetní model založený na poskytování <strong>služeb a programů uložených na internetových serverech</strong>, k nimž mohou uživatelé přistupovat pomocí klientských aplikací (nejčastěji webového prohlížeče) a používat je prakticky odkudkoliv. V případě placených služeb uživatelé neplatí za vlastní software, ale za jeho užití.
-        </p>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#e8f3ff" rx="10"/>
+                <path d="M 50 80 Q 40 70 50 60 Q 60 50 70 60 L 70 50 Q 80 40 90 50 Q 100 40 110 50 L 110 60 Q 120 50 130 60 Q 140 70 130 80 Z" fill="#00b4d8" stroke="#1b4965" stroke-width="1.5"/>
+                <circle cx="60" cy="110" r="6" fill="#0575e6"/>
+                <circle cx="90" cy="110" r="6" fill="#0575e6"/>
+                <circle cx="120" cy="110" r="6" fill="#0575e6"/>
+                <line x1="66" y1="110" x2="84" y2="110" stroke="#0575e6" stroke-width="1"/>
+                <line x1="96" y1="110" x2="114" y2="110" stroke="#0575e6" stroke-width="1"/>
+                <path d="M 60 110 L 60 140 M 90 110 L 90 140 M 120 110 L 120 140" stroke="#1b4965" stroke-width="1.5"/>
+                <rect x="45" y="140" width="30" height="25" fill="#06d6a0" rx="2" stroke="#1b4965" stroke-width="1"/>
+                <rect x="75" y="140" width="30" height="25" fill="#06d6a0" rx="2" stroke="#1b4965" stroke-width="1"/>
+                <rect x="105" y="140" width="30" height="25" fill="#06d6a0" rx="2" stroke="#1b4965" stroke-width="1"/>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Cloud computing</h2>
+                <p>
+                    Cloud computing je nový výpočetní model založený na poskytování <strong>služeb a programů uložených na internetových serverech</strong>, k nimž mohou uživatelé přistupovat pomocí klientských aplikací (nejčastěji webového prohlížeče) a používat je prakticky odkudkoliv. V případě placených služeb uživatelé neplatí za vlastní software, ale za jeho užití.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="box" id="typy-cloudu">
@@ -100,9 +138,35 @@
     </section>
 
     <section class="box" id="modely-cloudu">
-        <h2>Distribuční modely cloudu</h2>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink: 0;">
+                <rect width="180" height="180" fill="#e8f3ff" rx="10"/>
+                <g>
+                    <rect x="15" y="20" width="50" height="45" fill="#0575e6" rx="4"/>
+                    <text x="40" y="50" font-size="20" text-anchor="middle" fill="white">🖥️</text>
+                    <text x="40" y="72" font-size="9" font-weight="bold" text-anchor="middle" fill="#0575e6">IaaS</text>
+                </g>
+                <g>
+                    <rect x="72" y="20" width="50" height="45" fill="#06d6a0" rx="4"/>
+                    <text x="97" y="50" font-size="20" text-anchor="middle" fill="white">🔧</text>
+                    <text x="97" y="72" font-size="9" font-weight="bold" text-anchor="middle" fill="#06d6a0">PaaS</text>
+                </g>
+                <g>
+                    <rect x="129" y="20" width="50" height="45" fill="#52b788" rx="4"/>
+                    <text x="154" y="50" font-size="20" text-anchor="middle" fill="white">📦</text>
+                    <text x="154" y="72" font-size="9" font-weight="bold" text-anchor="middle" fill="#52b788">SaaS</text>
+                </g>
+                <rect x="20" y="80" width="140" height="80" fill="white" stroke="#1b4965" stroke-width="2" rx="5"/>
+                <text x="90" y="100" font-size="10" font-weight="bold" text-anchor="middle" fill="#1b4965">Managed Services</text>
+                <line x1="30" y1="110" x2="150" y2="110" stroke="#1b4965" stroke-width="1"/>
+                <text x="40" y="125" font-size="8" fill="#556677">• Infrastructure</text>
+                <text x="40" y="138" font-size="8" fill="#556677">• Middleware</text>
+                <text x="40" y="151" font-size="8" fill="#556677">• Application</text>
+            </svg>
+            <div style="flex: 1;">
+                <h2>Distribuční modely cloudu</h2>
 
-        <h3 id="iaas">IaaS (Infrastructure as a Service)</h3>
+                <h3 id="iaas">IaaS (Infrastructure as a Service)</h3>
         <p>
             Poskytovatel služeb nabízí klientům celou infrastrukturu, typicky virtuální stroje. Hlavní výhodou tohoto přístupu je, že se o veškeré problémy s hardwarem stará poskytovatel.
         </p>
@@ -119,6 +183,8 @@
             Aplikace je licencována jako služba pronajímaná uživateli a přístupná odkudkoliv a kdykoliv.
         </p>
         <p><strong>Příklady:</strong> Google Apps, Microsoft Office 365, Cargopass</p>
+            </div>
+        </div>
     </section>
 
     <section class="box" id="vyhody-nevyhody">
